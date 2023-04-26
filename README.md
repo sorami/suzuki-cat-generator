@@ -1,1 +1,1 @@
-![](./public/cat.png)
+![](./public/social.png)
