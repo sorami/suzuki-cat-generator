@@ -66,38 +66,57 @@
   });
 </script>
 
-<main class="max-w-4xl m-auto my-1 p-1 flex h-screen">
-  <div class="m-auto">
-    <div class="flex flex-col items-center gap-y-4">
-      <div class="font-bold text-2xl text-slate-600 font-mono">
-        Suzuki Cat Generator
-      </div>
-      <div class="">
-        <canvas id="cat" />
-      </div>
-      <div class="mt-2">
-        <textarea
-          bind:value={comment}
-          name="comment"
-          id="comment"
-          rows="1"
-          class="block w-72 rounded p-3 text-orange-600 font-bold shadow-sm border-1.5 border-gray-700"
-        />
-      </div>
-      <div class="text-sm flex gap-x-2">
-        <button
-          type="button"
-          on:click={copy}
-          class="rounded-md bg-gray-700 px-3 py-1 shadow text-white hover:bg-orange-600"
-          >クリップボードへコピー</button
-        >
-        <button
-          type="button"
-          on:click={download}
-          class="rounded-md bg-gray-700 px-3 py-1 shadow text-white hover:bg-orange-600"
-          >ダウンロード</button
-        >
+<div class="max-w-4xl m-auto flex flex-col gap-y-16 my-10 p-2">
+  <main>
+    <div class="m-auto">
+      <div class="flex flex-col items-center gap-y-4">
+        <div class="font-bold text-2xl text-slate-600 font-mono">
+          Suzuki Cat Generator
+        </div>
+        <div class="">
+          <canvas id="cat" />
+        </div>
+        <div class="mt-2">
+          <textarea
+            bind:value={comment}
+            name="comment"
+            id="comment"
+            rows="1"
+            class="block w-72 rounded p-3 text-orange-600 font-bold shadow-sm border-1.5 border-gray-700"
+          />
+        </div>
+        <div class="text-sm flex gap-x-2">
+          <button
+            type="button"
+            on:click={copy}
+            class="rounded-md bg-gray-700 px-3 py-1 shadow text-white hover:bg-orange-600"
+            >クリップボードへコピー</button
+          >
+          <button
+            type="button"
+            on:click={download}
+            class="rounded-md bg-gray-700 px-3 py-1 shadow text-white hover:bg-orange-600"
+            >ダウンロード</button
+          >
+        </div>
       </div>
     </div>
-  </div>
-</main>
+  </main>
+
+  <footer class="m-auto text-center text-xs font-mono text-gray-500">
+    <div>
+      original artwork: <a
+        class="underline hover:text-orange-600"
+        href="https://twitter.com/yuskesuzki/status/1651109487485550595"
+        >@yusukesuzuki</a
+      >
+    </div>
+    <div>
+      code: <a
+        class="underline hover:text-orange-600"
+        href="https://github.com/sorami/suzuki-cat-generator"
+        >github.com/sorami/suzuki-cat-generator</a
+      >
+    </div>
+  </footer>
+</div>
