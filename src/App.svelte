@@ -89,7 +89,7 @@
           type="button"
           on:click={copy}
           class="rounded-md bg-gray-700 px-3 py-1 shadow text-white hover:bg-orange-600"
-          >クリックボードへコピー</button
+          >クリップボードへコピー</button
         >
         <button
           type="button"
