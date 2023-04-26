@@ -73,7 +73,7 @@
         <div class="font-bold text-2xl text-slate-600 font-mono">
           Suzuki Cat Generator
         </div>
-        <div class="">
+        <div class="hover:animate-ping">
           <canvas id="cat" />
         </div>
         <div class="mt-2">
