@@ -66,7 +66,9 @@
   });
 </script>
 
-<div class="max-w-4xl m-auto flex flex-col gap-y-16 my-10 p-2">
+<div
+  class="max-w-4xl m-1 p-1 h-screen flex flex-col gap-y-12 justify-center mx-auto"
+>
   <main>
     <div class="m-auto">
       <div class="flex flex-col items-center gap-y-4">
@@ -103,7 +105,7 @@
     </div>
   </main>
 
-  <footer class="m-auto text-center text-xs font-mono text-gray-500">
+  <footer class="text-center text-xs font-mono text-gray-500">
     <div>
       original artwork: <a
         class="underline hover:text-orange-600"
